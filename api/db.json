@@ -4,7 +4,7 @@
       "id": 1,
       "username": "bogdan",
       "role": "admin",
-      "email": "bogdan128719@gmail.com",
+      "email": "bogdan19@gmail.com",
       "balance": 510,
       "country": "Ukraine",
       "city": "Zaporizhzhia"
@@ -13,7 +13,7 @@
       "id": 2,
       "username": "mayaryder",
       "role": "user",
-      "email": "maya.ryder128@gmail.com",
+      "email": "maya.ryder12@gmail.com",
       "balance": 0,
       "country": "USA",
       "city": "California"
@@ -107,6 +107,68 @@
       "balance": 55,
       "country": "Ukraine",
       "city": "Chernihiv"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 14",
+      "memory": [
+        { "name": "128", "price": 0 },
+        { "name": "256", "price": 200 },
+        { "name": "256", "price": 300 }
+      ],
+      "price": 1200
+    },
+    {
+      "id": 2,
+      "name": "Iphone 13 pro",
+      "memory": [
+        { "name": "128", "price": 0 },
+        { "name": "256", "price": 200 },
+        { "name": "256", "price": 300 }
+      ],
+      "price": 1100
+    },
+    {
+      "id": 3,
+      "name": "Iphone 13",
+      "memory": [
+        { "name": "128", "price": 0 },
+        { "name": "256", "price": 200 },
+        { "name": "256", "price": 300 }
+      ],
+      "price": 1000
+    },
+    {
+      "id": 4,
+      "name": "Iphone 12",
+      "memory": [
+        { "name": "128", "price": 0 },
+        { "name": "256", "price": 200 },
+        { "name": "256", "price": 300 }
+      ],
+      "price": 800
+    },
+    {
+      "id": 5,
+      "name": "Macbook M1",
+      "memory": [
+        { "name": "256", "price": 0 },
+        { "name": "512", "price": 300 },
+        { "name": "1tb", "price": 600 }
+      ],
+      "price": 1900
+    },
+    {
+      "id": 6,
+      "name": "Macbook M1 Pro",
+      "memory": [
+        { "name": "256", "price": 0 },
+        { "name": "512", "price": 300 },
+        { "name": "1tb", "price": 600 }
+      ],
+      "price": 2500
     }
   ]
 }
