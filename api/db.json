@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "bogdan",
+      "role": "admin",
+      "email": "bogdan128719@gmail.com",
+      "balance": 510,
+      "country": "Ukraine",
+      "city": "Zaporizhzhia"
+    },
+    {
+      "id": 2,
+      "username": "mayaryder",
+      "role": "user",
+      "email": "maya.ryder128@gmail.com",
+      "balance": 0,
+      "country": "USA",
+      "city": "California"
+    },
+    {
+      "id": 3,
+      "username": "olive_barajas",
+      "role": "user",
+      "email": "olive_barajas@gmail.com",
+      "balance": 23,
+      "country": "Poland",
+      "city": "Katowice"
+    },
+    {
+      "id": 4,
+      "username": "eilishtait",
+      "role": "user",
+      "email": "12eilishtait@gmail.com",
+      "balance": 89,
+      "country": "Ukraine",
+      "city": "Lviv"
+    },
+    {
+      "id": 5,
+      "username": "max25",
+      "role": "user",
+      "email": "max.ng6@gmail.com",
+      "balance": 5,
+      "country": "Poland",
+      "city": "Warsaw"
+    },
+    {
+      "id": 6,
+      "username": "hunterwre334",
+      "role": "user",
+      "email": "oleg.hunt3223@gmail.com",
+      "balance": 1010,
+      "country": "Ukraine",
+      "city": "Odesa"
+    },
+    {
+      "id": 7,
+      "username": "Egor56",
+      "role": "user",
+      "email": "egor.supepr2183@gmail.com",
+      "balance": 0,
+      "country": "Ukraine",
+      "city": "Zaporizhzhia"
+    },
+    {
+      "id": 8,
+      "username": "ivan10",
+      "role": "user",
+      "email": "ivanoqj12012@gmail.com",
+      "balance": 510,
+      "country": "Ukraine",
+      "city": "Kharkiv"
+    },
+    {
+      "id": 9,
+      "username": "o9rng",
+      "role": "user",
+      "email": "o9rng@gmail.com",
+      "balance": 37,
+      "country": "Ukraine",
+      "city": "Kharkiv"
+    },
+    {
+      "id": 11,
+      "username": "danilpro2001",
+      "role": "user",
+      "email": "danilpro2001@gmail.com",
+      "balance": 0,
+      "country": "Ukraine",
+      "city": "Dnipro"
+    },
+    {
+      "id": 12,
+      "username": "masha1111",
+      "role": "user",
+      "email": "masha1111@gmail.com",
+      "balance": 10,
+      "country": "Ukraine",
+      "city": "Kyiv"
+    },
+    {
+      "id": 13,
+      "username": "den910",
+      "role": "user",
+      "email": "dench190@gmail.com",
+      "balance": 55,
+      "country": "Ukraine",
+      "city": "Chernihiv"
+    }
+  ]
+}
