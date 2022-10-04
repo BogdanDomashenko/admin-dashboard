@@ -224,5 +224,58 @@
       ],
       "price": 2500
     }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "products": [
+        { "id": 1, "memory": "128", "count": 1 },
+        { "id": 3, "memory": "256", "count": 1 }
+      ],
+      "totalPrice": 2200,
+      "createdAt": "6/5/2022, 7:42:35 AM"
+    },
+    {
+      "id": 2,
+      "products": [
+        { "id": 5, "memory": "256", "count": 2 },
+        { "id": 2, "memory": "128", "count": 1 }
+      ],
+      "totalPrice": 4900,
+      "createdAt": "10/6/2022, 10:13:01 AM"
+    },
+    {
+      "id": 3,
+      "products": [{ "id": 5, "memory": "256", "count": 2 }],
+      "totalPrice": 2400,
+      "createdAt": "12/6/2022, 08:02:50 PM"
+    },
+    {
+      "id": 4,
+      "products": [
+        { "id": 5, "memory": "256", "count": 2 },
+        { "id": 2, "memory": "128", "count": 1 }
+      ],
+      "totalPrice": 4900,
+      "createdAt": "01/7/2022, 01:43:33 PM"
+    },
+    {
+      "id": 5,
+      "products": [
+        { "id": 5, "memory": "256", "count": 2 },
+        { "id": 2, "memory": "128", "count": 1 }
+      ],
+      "totalPrice": 4900,
+      "createdAt": "03/9/2022, 04:12:00 PM"
+    },
+    {
+      "id": 6,
+      "products": [
+        { "id": 1, "memory": "128", "count": 1 },
+        { "id": 3, "memory": "256", "count": 1 }
+      ],
+      "totalPrice": 2200,
+      "createdAt": "08/9/2022, 10:33:28 PM"
+    }
   ]
 }
