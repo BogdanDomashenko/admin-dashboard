@@ -1,6 +1,8 @@
 import jsonServerProvider from "ra-data-json-server";
 import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
 import { Dashboard } from "./components/dashboard/Dashboard";
+import { ProductCreate } from "./components/products/ProductCreate";
+import { ProductEdit } from "./components/products/ProductEdit";
 import { ProductList } from "./components/products/ProductList";
 import { UserCreate } from "./components/users/UserCreate";
 import { UserEdit } from "./components/users/UserEdit";
@@ -17,7 +19,12 @@ const App = () => {
         edit={UserEdit}
         create={UserCreate}
       />
-      <Resource name="products" list={ProductList} />
+      <Resource
+        name="products"
+        list={ProductList}
+        edit={ProductEdit}
+        create={ProductCreate}
+      />
     </Admin>
   );
 };

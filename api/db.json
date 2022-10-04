@@ -114,9 +114,18 @@
       "id": 1,
       "name": "Iphone 14",
       "memory": [
-        { "name": "128", "price": 0 },
-        { "name": "256", "price": 200 },
-        { "name": "256", "price": 300 }
+        {
+          "name": "128",
+          "price": 10
+        },
+        {
+          "name": "256",
+          "price": 200
+        },
+        {
+          "name": "256",
+          "price": 300
+        }
       ],
       "price": 1200
     },
@@ -124,9 +133,18 @@
       "id": 2,
       "name": "Iphone 13 pro",
       "memory": [
-        { "name": "128", "price": 0 },
-        { "name": "256", "price": 200 },
-        { "name": "256", "price": 300 }
+        {
+          "name": "128",
+          "price": 0
+        },
+        {
+          "name": "256",
+          "price": 200
+        },
+        {
+          "name": "256",
+          "price": 300
+        }
       ],
       "price": 1100
     },
@@ -134,9 +152,18 @@
       "id": 3,
       "name": "Iphone 13",
       "memory": [
-        { "name": "128", "price": 0 },
-        { "name": "256", "price": 200 },
-        { "name": "256", "price": 300 }
+        {
+          "name": "128",
+          "price": 0
+        },
+        {
+          "name": "256",
+          "price": 200
+        },
+        {
+          "name": "256",
+          "price": 300
+        }
       ],
       "price": 1000
     },
@@ -144,9 +171,18 @@
       "id": 4,
       "name": "Iphone 12",
       "memory": [
-        { "name": "128", "price": 0 },
-        { "name": "256", "price": 200 },
-        { "name": "256", "price": 300 }
+        {
+          "name": "128",
+          "price": 0
+        },
+        {
+          "name": "256",
+          "price": 200
+        },
+        {
+          "name": "256",
+          "price": 300
+        }
       ],
       "price": 800
     },
@@ -154,9 +190,18 @@
       "id": 5,
       "name": "Macbook M1",
       "memory": [
-        { "name": "256", "price": 0 },
-        { "name": "512", "price": 300 },
-        { "name": "1tb", "price": 600 }
+        {
+          "name": "256",
+          "price": 0
+        },
+        {
+          "name": "512",
+          "price": 300
+        },
+        {
+          "name": "1tb",
+          "price": 600
+        }
       ],
       "price": 1900
     },
@@ -164,9 +209,18 @@
       "id": 6,
       "name": "Macbook M1 Pro",
       "memory": [
-        { "name": "256", "price": 0 },
-        { "name": "512", "price": 300 },
-        { "name": "1tb", "price": 600 }
+        {
+          "name": "256",
+          "price": 0
+        },
+        {
+          "name": "512",
+          "price": 300
+        },
+        {
+          "name": "1tb",
+          "price": 600
+        }
       ],
       "price": 2500
     }
