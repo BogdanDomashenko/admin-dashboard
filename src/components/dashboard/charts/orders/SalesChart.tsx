@@ -12,50 +12,36 @@ import {
 
 const data = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: "March",
+    sales: 233,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: "April",
+    sales: 140,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: "May",
+    sales: 367,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: "June",
+    sales: 398,
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    name: "July",
+    sales: 502,
   },
   {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    name: "August",
+    sales: 411,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "September",
+    sales: 401,
   },
 ];
 
-export const OrdersChart: FC = () => {
+export const SalesChart: FC = () => {
   return (
     <ResponsiveContainer width="100%" height={400}>
       <LineChart
@@ -74,13 +60,7 @@ export const OrdersChart: FC = () => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line
-          type="monotone"
-          dataKey="pv"
-          stroke="#8884d8"
-          activeDot={{ r: 8 }}
-        />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="sales" stroke="#8884d8" />
       </LineChart>
     </ResponsiveContainer>
   );

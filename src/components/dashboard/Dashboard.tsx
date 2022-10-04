@@ -6,11 +6,14 @@ import { Title, useGetList } from "react-admin";
 import { UserCountryChart } from "./charts/users/UserCountryCahrt";
 import { useCountriesPopularity } from "../../hooks/useCountriesPopularity";
 import { OrderItem } from "./order/OrderItem";
-import { Order } from "../../shared/types/order.types";
-import { OrdersChart } from "./charts/orders/OrdersChart";
+import { SalesChart } from "./charts/orders/SalesChart";
 import styled from "@emotion/styled";
+import { RevenueChart } from "./charts/orders/RevenueChart";
+import { LastOrders } from "./order/LastOrders";
+import { Order } from "../../shared/types/order.types";
+import { NewUsers } from "./user/NewUsers";
 
-const Item = styled.div<{ width?: string }>`
+const Item = styled.div<{ width?: string; height?: string }>`
   width: ${(props) => props.width || "100%"};
   @media (max-width: 767.98px) {
     width: 100%;
@@ -22,6 +25,7 @@ export const Dashboard: FC = () => {
 
   const countriesPopularity = useCountriesPopularity();
   const { data: orders } = useGetList("orders");
+  const { data: users } = useGetList("users");
 
   useEffect(() => {
     if (orders?.length) {
@@ -37,42 +41,48 @@ export const Dashboard: FC = () => {
           <Item>
             <Card>
               <CardContent>
-                <OrdersChart />
+                <Typography variant="h6" marginBottom="20px">
+                  Sales
+                </Typography>
+                <SalesChart />
               </CardContent>
             </Card>
           </Item>
           <Item width="30%">
             <Card>
               <CardContent>
-                <Typography variant="h5">Users countries</Typography>
+                <Typography variant="h6" marginBottom="20px">
+                  Users countries
+                </Typography>
                 {countriesPopularity && (
                   <UserCountryChart countries={countriesPopularity} />
                 )}
               </CardContent>
             </Card>
           </Item>
+          <Item width="68%">
+            <Card>
+              <CardContent>
+                <Typography variant="h6" marginBottom="20px">
+                  Revenue
+                </Typography>
+                <RevenueChart />
+              </CardContent>
+            </Card>
+          </Item>
         </Grid>
-        <Grid container width="30%">
+        <Grid container width="30%" gap="20px">
           <Item>
             <Card>
               <CardContent>
-                <Typography variant="h6">Latest orders</Typography>
-                <Grid
-                  container
-                  flexDirection="column"
-                  gap="20px"
-                  marginTop="20px"
-                >
-                  {sortedOrders?.length &&
-                    sortedOrders.map((order) => (
-                      <OrderItem
-                        id={order.id}
-                        price={order.totalPrice}
-                        createdAt={order.createdAt}
-                        key={order.id}
-                      />
-                    ))}
-                </Grid>
+                {sortedOrders?.length && <LastOrders orders={sortedOrders} />}
+              </CardContent>
+            </Card>
+          </Item>
+          <Item>
+            <Card>
+              <CardContent>
+                {users?.length && <NewUsers users={users} />}
               </CardContent>
             </Card>
           </Item>

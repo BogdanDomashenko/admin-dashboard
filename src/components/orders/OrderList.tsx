@@ -19,7 +19,7 @@ export const OrderList: FC = () => {
         <ReferenceManyField label="Products" reference="products" target="id">
           <Datagrid>
             <TextField source="name" />
-            <TextField source="price" />
+            <TextField source="price" textAlign="right" />
           </Datagrid>
         </ReferenceManyField>
         <ArrayField source="products">
