@@ -1,5 +1,7 @@
-import { Grid, Typography } from "@mui/material";
+import styled from "@emotion/styled";
+import { colors, Grid, Typography } from "@mui/material";
 import { FC, useMemo } from "react";
+import { Link } from "react-admin";
 import { randomDate } from "../../../shared/utils/randomDate";
 
 interface Props {
@@ -8,11 +10,21 @@ interface Props {
   createdAt: string;
 }
 
+const Container = styled(Link)`
+  display: flex;
+  padding: 20px 0;
+  color: black;
+  &:hover {
+    cursor: pointer;
+    background-color: ${colors.grey[100]};
+  }
+`;
+
 export const OrderItem: FC<Props> = ({ id, price, createdAt }) => {
   const date: Date = new Date(createdAt);
 
   return (
-    <Grid container>
+    <Container to={`/orders/${id}`}>
       <Grid item width="10%">
         <Typography variant="body1" align="center">
           {id}
@@ -28,6 +40,6 @@ export const OrderItem: FC<Props> = ({ id, price, createdAt }) => {
           {date.toLocaleString()}
         </Typography>
       </Grid>
-    </Grid>
+    </Container>
   );
 };

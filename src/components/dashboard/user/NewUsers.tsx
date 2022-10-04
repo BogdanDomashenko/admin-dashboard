@@ -11,7 +11,6 @@ interface Props {
 
 const UsersContainer = styled.div`
   display: flex;
-  gap: 20px;
   flex-direction: column;
   height: 400px;
   overflow-y: auto;
@@ -25,6 +24,7 @@ export const NewUsers: FC<Props> = ({ users }) => {
       <UsersContainer>
         {users.map((user) => (
           <UserItem
+            id={user.id}
             username={user.username}
             balance={user.balance}
             country={user.country}

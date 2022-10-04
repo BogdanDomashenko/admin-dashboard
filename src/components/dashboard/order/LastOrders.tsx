@@ -10,7 +10,6 @@ interface Props {
 
 const OrdersContainer = styled.div`
   display: flex;
-  gap: 20px;
   flex-direction: column;
   max-height: 400px;
   height: auto;

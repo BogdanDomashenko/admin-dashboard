@@ -1,16 +1,28 @@
-import { Grid, Typography } from "@mui/material";
-import { FC, useMemo } from "react";
-import { randomDate } from "../../../shared/utils/randomDate";
+import styled from "@emotion/styled";
+import { colors, Grid, Typography } from "@mui/material";
+import { FC } from "react";
+import { Link } from "react-admin";
 
 interface Props {
+  id: number;
   username: string;
   balance: number;
   country: string;
 }
 
-export const UserItem: FC<Props> = ({ username, balance, country }) => {
+const Container = styled(Link)`
+  display: flex;
+  padding: 20px 10px;
+  color: black;
+  &:hover {
+    cursor: pointer;
+    background-color: ${colors.grey[100]};
+  }
+`;
+
+export const UserItem: FC<Props> = ({ id, username, balance, country }) => {
   return (
-    <Grid container>
+    <Container to={`/users/${id}`}>
       <Grid item width="50%">
         <Typography variant="body1" align="left">
           {username}
@@ -26,6 +38,6 @@ export const UserItem: FC<Props> = ({ username, balance, country }) => {
           {country}
         </Typography>
       </Grid>
-    </Grid>
+    </Container>
   );
 };

@@ -1,5 +1,6 @@
 import jsonServerProvider from "ra-data-json-server";
 import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
+import { authProvider } from "./authProvider";
 import { Dashboard } from "./components/dashboard/Dashboard";
 import { OrderList } from "./components/orders/OrderList";
 import { ProductCreate } from "./components/products/ProductCreate";
@@ -13,7 +14,12 @@ const dataProvider = jsonServerProvider("http://localhost:3000");
 
 const App = () => {
   return (
-    <Admin dataProvider={dataProvider} dashboard={Dashboard}>
+    <Admin
+      dataProvider={dataProvider}
+      dashboard={Dashboard}
+      authProvider={authProvider}
+      requireAuth
+    >
       <Resource
         name="users"
         list={UserList}
