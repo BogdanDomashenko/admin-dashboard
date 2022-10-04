@@ -10,7 +10,7 @@ interface Props {
   createdAt: string;
 }
 
-const Container = styled(Link)`
+const Container = styled.div`
   display: flex;
   padding: 20px 0;
   color: black;
@@ -24,22 +24,24 @@ export const OrderItem: FC<Props> = ({ id, price, createdAt }) => {
   const date: Date = new Date(createdAt);
 
   return (
-    <Container to={`/orders/${id}`}>
-      <Grid item width="10%">
-        <Typography variant="body1" align="center">
-          {id}
-        </Typography>
-      </Grid>
-      <Grid item width="40%">
-        <Typography variant="body1" align="center">
-          {price}$
-        </Typography>
-      </Grid>
-      <Grid item width="50%">
-        <Typography variant="body1" align="center">
-          {date.toLocaleString()}
-        </Typography>
-      </Grid>
-    </Container>
+    <Link to={`/orders/${id}`}>
+      <Container>
+        <Grid item width="10%">
+          <Typography variant="body1" align="center">
+            {id}
+          </Typography>
+        </Grid>
+        <Grid item width="40%">
+          <Typography variant="body1" align="center">
+            {price}$
+          </Typography>
+        </Grid>
+        <Grid item width="50%">
+          <Typography variant="body1" align="center">
+            {date.toLocaleString()}
+          </Typography>
+        </Grid>
+      </Container>
+    </Link>
   );
 };

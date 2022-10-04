@@ -36,7 +36,12 @@ export const Dashboard: FC = () => {
   return (
     <>
       <Title title="Dashboard" />
-      <Grid container justifyContent="space-between" marginTop="20px">
+      <Grid
+        container
+        justifyContent="space-between"
+        marginTop="20px"
+        marginBottom="20px"
+      >
         <Grid container gap="20px" width="68%">
           <Item>
             <Card>

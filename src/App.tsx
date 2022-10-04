@@ -10,7 +10,9 @@ import { UserCreate } from "./components/users/UserCreate";
 import { UserEdit } from "./components/users/UserEdit";
 import { UserList } from "./components/users/UserList";
 
-const dataProvider = jsonServerProvider("http://localhost:3000");
+const dataProvider = jsonServerProvider(
+  "https://my-json-server.typicode.com/BogdanDomashenko/admin-dashboard"
+);
 
 const App = () => {
   return (
