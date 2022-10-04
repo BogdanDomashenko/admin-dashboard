@@ -20,6 +20,19 @@ const Item = styled.div<{ width?: string; height?: string }>`
   }
 `;
 
+const Container = styled.div<{ width?: string; height?: string }>`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: ${(props) => props.width || "100%"};
+  @media (max-width: 767.98px) {
+    width: 100%;
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+`;
+
 export const Dashboard: FC = () => {
   const [sortedOrders, setSortedOrders] = useState<Order[]>();
 
@@ -42,7 +55,7 @@ export const Dashboard: FC = () => {
         marginTop="20px"
         marginBottom="20px"
       >
-        <Grid container gap="20px" width="68%">
+        <Container width="68%">
           <Item>
             <Card>
               <CardContent>
@@ -75,8 +88,8 @@ export const Dashboard: FC = () => {
               </CardContent>
             </Card>
           </Item>
-        </Grid>
-        <Grid container width="30%" gap="20px">
+        </Container>
+        <Container width="30%">
           <Item>
             <Card>
               <CardContent>
@@ -91,7 +104,7 @@ export const Dashboard: FC = () => {
               </CardContent>
             </Card>
           </Item>
-        </Grid>
+        </Container>
       </Grid>
     </>
   );
