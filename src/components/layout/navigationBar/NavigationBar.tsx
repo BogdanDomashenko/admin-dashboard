@@ -10,7 +10,7 @@ export const NavigationBar: FC = () => {
   return (
     <Menu>
       <Menu.DashboardItem />
-      <Menu.Item to="/users" primaryText="MyUsers" leftIcon={<PeopleIcon />} />
+      <Menu.Item to="/users" primaryText="Users" leftIcon={<PeopleIcon />} />
       <Menu.Item
         to="/products"
         primaryText="Products"
