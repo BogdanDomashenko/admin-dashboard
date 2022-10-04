@@ -228,6 +228,7 @@
   "orders": [
     {
       "id": 1,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
@@ -237,6 +238,7 @@
     },
     {
       "id": 2,
+      "status": "processing",
       "products": [
         { "id": 5, "memory": "256", "count": 2 },
         { "id": 2, "memory": "128", "count": 1 }
@@ -246,12 +248,14 @@
     },
     {
       "id": 3,
+      "status": "processing",
       "products": [{ "id": 5, "memory": "256", "count": 2 }],
       "totalPrice": 2400,
       "createdAt": "12/6/2022, 08:02:50 PM"
     },
     {
       "id": 4,
+      "status": "processing",
       "products": [
         { "id": 5, "memory": "256", "count": 2 },
         { "id": 2, "memory": "128", "count": 1 }
@@ -261,6 +265,7 @@
     },
     {
       "id": 5,
+      "status": "processing",
       "products": [
         { "id": 5, "memory": "256", "count": 2 },
         { "id": 2, "memory": "128", "count": 1 }
@@ -270,6 +275,7 @@
     },
     {
       "id": 6,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
@@ -279,6 +285,7 @@
     },
     {
       "id": 7,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
@@ -288,6 +295,7 @@
     },
     {
       "id": 8,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
@@ -297,6 +305,7 @@
     },
     {
       "id": 9,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
@@ -306,6 +315,7 @@
     },
     {
       "id": 10,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
@@ -315,6 +325,7 @@
     },
     {
       "id": 11,
+      "status": "processing",
       "products": [
         { "id": 1, "memory": "128", "count": 1 },
         { "id": 3, "memory": "256", "count": 1 }
