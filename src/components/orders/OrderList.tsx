@@ -16,7 +16,7 @@ export const OrderList: FC = () => {
     <List>
       <Datagrid rowClick="edit">
         <NumberField source="id" />
-        <TextField source="statuse" />
+        <TextField source="status" />
         <ReferenceManyField label="Products" reference="products" target="id">
           <Datagrid>
             <TextField source="name" />

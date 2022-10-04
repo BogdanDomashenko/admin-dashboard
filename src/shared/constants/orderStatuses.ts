@@ -1,11 +1,11 @@
 export const OrderStatusesList: string[] = [
   "processing",
-  "compleated",
+  "completed",
   "cancelled",
 ];
 
 export enum OrderStatuses {
   processing = "processing",
-  compleated = "compleated",
+  compleated = "completed",
   cancelled = "cancelled",
 }
