@@ -10,7 +10,7 @@ interface Props {
   country: string;
 }
 
-const Container = styled(Link)`
+const Container = styled.div`
   display: flex;
   padding: 20px 10px;
   color: black;
@@ -22,22 +22,24 @@ const Container = styled(Link)`
 
 export const UserItem: FC<Props> = ({ id, username, balance, country }) => {
   return (
-    <Container to={`/users/${id}`}>
-      <Grid item width="50%">
-        <Typography variant="body1" align="left">
-          {username}
-        </Typography>
-      </Grid>
-      <Grid item width="20%">
-        <Typography variant="body1" align="center">
-          {balance}$
-        </Typography>
-      </Grid>
-      <Grid item width="30%">
-        <Typography variant="body1" align="center">
-          {country}
-        </Typography>
-      </Grid>
-    </Container>
+    <Link to={`/users/${id}`}>
+      <Container>
+        <Grid item width="50%">
+          <Typography variant="body1" align="left">
+            {username}
+          </Typography>
+        </Grid>
+        <Grid item width="20%">
+          <Typography variant="body1" align="center">
+            {balance}$
+          </Typography>
+        </Grid>
+        <Grid item width="30%">
+          <Typography variant="body1" align="center">
+            {country}
+          </Typography>
+        </Grid>
+      </Container>
+    </Link>
   );
 };
