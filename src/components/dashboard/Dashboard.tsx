@@ -24,6 +24,7 @@ const Container = styled.div<{ width?: string; height?: string }>`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
   width: ${(props) => props.width || "100%"};
   @media (max-width: 767.98px) {
     width: 100%;
@@ -66,7 +67,7 @@ export const Dashboard: FC = () => {
               </CardContent>
             </Card>
           </Item>
-          <Item width="30%">
+          <Item width="42%">
             <Card>
               <CardContent>
                 <Typography variant="h6" marginBottom="20px">
@@ -78,7 +79,7 @@ export const Dashboard: FC = () => {
               </CardContent>
             </Card>
           </Item>
-          <Item width="68%">
+          <Item width="55%">
             <Card>
               <CardContent>
                 <Typography variant="h6" marginBottom="20px">

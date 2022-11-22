@@ -8,9 +8,13 @@ const SettingGroup = styled.div`
   display: flex;
   flex-direction: column;
   width: 20%;
+  &:not(:first-of-type) {
+    margin-left: 25px;
+  }
   @media (max-width: 767.98px) {
     width: 100%;
     &:not(:first-of-type) {
+      margin-left: 0;
       margin-top: 40px;
     }
   }
